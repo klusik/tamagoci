@@ -8,13 +8,18 @@
 # MAIN IMPORTS #
 
 # LOCAL IMPORTS #
+from src.window import Window
 
 # CLASSES #
 class App:
-    pass
+    def __init__(self):
+        self.window = Window()
+
+    def run(self):
+        self.window.run()
 
 
 # RUNTIME #
 if __name__ == "__main__":
-    game = App()
-    pass
+    app = App()
+    app.run()
