@@ -15,7 +15,11 @@ class App:
     def __init__(self):
         self.window = Window()
 
-    def run(self):
+    def run(self) -> None:
+        """
+        Run the app
+        :return: None
+        """
         self.window.run()
 
 
